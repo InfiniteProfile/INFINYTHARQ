@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05010d">
+<title>INFINYTHARQ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+
+<form id="bar" role="search" autocomplete="off">
+  <input id="q" type="search" placeholder="Search a name, keyword or exact ID" aria-label="Search profiles" enterkeyhint="search" spellcheck="false">
+  <button id="clear" type="button" aria-label="Clear search" hidden>&times;</button>
+</form>
+
+<main id="universe" aria-label="Profile universe">
+  <div id="feed"></div>
+  <div id="sentinel"></div>
+</main>
+
+<section id="results" aria-label="Search results" hidden>
+  <p id="rstatus" aria-live="polite"></p>
+  <div id="rgrid" class="res"></div>
+</section>
+
+<div id="modal" hidden>
+  <article id="sheet" role="dialog" aria-modal="true" aria-label="Profile details"></article>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
